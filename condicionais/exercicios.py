@@ -24,4 +24,19 @@ else:
         print("Que maneiro!!");
     else:
         print("Showww");
-        
+
+
+## elif ##
+
+name = input("Qual é o seu nome?  ");
+idade = input("Qual é a sua idade?  ");
+
+if int(idade) >= 18:
+    print("Uau, você já é maior de idade!");
+elif int(idade) == 17:
+    print("Você já é quase de maior!");
+elif int(idade) == 16:
+    print("Você está deixando de ser adolecente!");
+else:
+    print("Você ainda é adolecente!");
+    
