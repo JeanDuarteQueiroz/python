@@ -5,11 +5,11 @@
 valor_compra = input("Informe o valor total da compra:  ");
 cupom = input("Informe o cupom de desconto:  ").upper();
 
-valor_compra_convert = float(valor_compra);
+valor_compra = float(valor_compra);
 
 if (cupom) == "NIVER10":
-    valor_compra_convert -= valor_compra_convert * 0.10
-    print("Valor total da sua compra ficou: {}".format(valor_compra_convert));
+    valor_compra -= valor_compra * 0.10
+    print("Valor total da sua compra ficou: {}".format(valor_compra));
 else:
     print("Cupom Inválido!")
-    print("Valor total da sua compra ficou: {}".format(valor_compra_convert));
+    print("Valor total da sua compra ficou: {}".format(valor_compra));

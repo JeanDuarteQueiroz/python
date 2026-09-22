@@ -6,7 +6,7 @@
 email = input("Informe o seu e-mail:  ").upper();
 nota = input ("Infomre a sua nota:  ");
 
-nota_convertida = float(nota);
+nota = float(nota);
 
-if (nota_convertida) >= 8.5:
+if (nota) >= 8.5:
     print("ENVIANDO CONVITE PARA {}".format(email));
