@@ -4,19 +4,19 @@
 # A primeira etapa que aprendemos na escola é calcular o *delta* por meio da fórmula: B² -4 . A . C e depois, caso o delta seja positivo, existem dois valores para x. Caso seja zero, existe apenas um valor. E caso seja negativo, informamos que não há valor real para X.
 import math;
 
-valor_a = input("Informe o valor de A:  ");
+a = float(input("Informe o valor de A:  "));
 
-valor_b = input("Informe o valor de B:  ");
+b = float(input("Informe o valor de B:  "));
 
-valor_c = input("Informe o valor de C:  ");
+c = float(input("Informe o valor de C:  "));
 
-a = float(valor_a);
-b = float(valor_b);
-c = float(valor_c);
+#a = float(valor_a);
+#b = float(valor_b);
+#c = float(valor_c);
 
 valor_delta = (b * b) - 4 * a * c;
-
 print("O valor de delta é: {}".format(valor_delta));
+
 if (valor_delta) > 0.0:
     x1 = (- b + math.sqrt(valor_delta)) / (2 * a)
     x2 = (- b - math.sqrt(valor_delta)) / (2 * a)
