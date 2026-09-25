@@ -8,17 +8,12 @@ listaImpar = [];
 listaPar = [];
 
 # Uma lista apenas com números pares.
-def pegaPareImpar (lista):
-    listaPar = [];
-    listaImpar = [];
-    for x in range(0,len(numeros),1):
-        if numeros[x] % 2 == 0:
-            listaPar.append(numeros[x]);
-        else:
-            listaImpar.append(numeros[x]);
-    return listaPar, listaImpar;
 
-listaPar, listaImpar = pegaPareImpar(numeros);
+for x in numeros:
+    if x % 2 == 0:
+        listaPar.append(x);
+    else:
+        listaImpar.append(x);
 
 print(f"Essa é a lista dos pares:\n {listaPar}")
 print(f"Essa é a lista dos impares:\n {listaImpar}")
