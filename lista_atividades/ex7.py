@@ -5,17 +5,17 @@
 #O número deve ser divisível por cinco.
 #Se o número for maior que 150, pule e passe para o próximo.
 #Se o número for maior que 500, interrompa o loop completamente.
-lista = [12, 75, 150, 180, 145, 525, 50];
-resultado = [];
-for x in lista:
-    if x > 500:
-        print(f"{x} passou do limite estabelecido! Fica fora!");
+numeros = [12, 75, 150, 180, 145, 525, 50];
+listaNova = [];
+for x in range(0,len(numeros),1):
+    if numeros[x] > 500:
+        print(f" {numeros[x]} ultrapassou o limite estabelecido. Fica de Fora!");
         break
-    elif x > 150:
+    elif numeros[x] > 150:
         continue
-    elif x % 5 == 0:
-        resultado.append(x);
+    elif numeros[x] % 5 == 0:
+        listaNova.append(numeros[x]);
     else:
-        print(f"{x} não é um número válido! Fica fora!");
+        print(f" {numeros[x]} não é um número válido. Fica de Fora!");
 
-print(f" {resultado} ");
+print(f" A nova lista é: {listaNova}");   
