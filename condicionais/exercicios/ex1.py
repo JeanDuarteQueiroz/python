@@ -3,10 +3,9 @@
 #Utilizando apenas um if simples, podemos resolver esse problema rapidamente! Basta solicitarmos a digitação dos dados, converter a nota para reais e verificar se ela atende à condição do professor Jones.
 
 
-email = input("Informe o seu e-mail:  ").upper();
-nota = input ("Infomre a sua nota:  ");
-
-nota = float(nota);
+email, nota = input("Informe o seu e-mail:  ").upper(), float(input("Infomre a sua nota:  "));
 
 if (nota) >= 8.5:
     print("ENVIANDO CONVITE PARA {}".format(email));
+else:
+    print("Não atingiu a nota suficiente!");
