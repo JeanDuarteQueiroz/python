@@ -6,13 +6,12 @@ primeiro = None;
 ultimo = None;
 
 for x in range(len(tupla)):
-    
     if x == 0:
         primeiro = tupla[x];
     elif x == len(tupla) -1:
         ultimo = tupla[x];
         
-print(f"O primeiro item  é: {ultimo}\nO último item é: {primeiro}")
+print(f"O primeiro item  é: {ultimo}\nO último item é: {primeiro}\nO tamanho total da tupla é: {len(tupla)}");
 
 
-## esperar quando os exercicios cobrarem a leitura da tupla
+## não funciona ... esperar quando os exercicios cobrarem a leitura da tupla
