@@ -1,15 +1,16 @@
-def contaVogaleConsoante (palavra):
+def contaVogalConsoante (texto):
     vogais = ['a','e','i','o','u'];
-    ConsoantesPalavra = [];
-    VogaisPalavra = [];
-    for x in palavra:
-        if x in vogais:
-            VogaisPalavra.append(x);
-        elif x == " ":
-            continue;
-        else:
-            ConsoantesPalavra.append(x);
-    return VogaisPalavra, ConsoantesPalavra;
+    eVogal = [];
+    eConsoante = []; 
+    for x in texto.lower():
+        if x.isalpha():
+            if x in vogais:
+                eVogal.append(x);
+            else:
+                eConsoante.append(x);
+    return eVogal, eConsoante;
 
-asVogais, asConsoantes = contaVogaleConsoante(input("Digite uma palavra: ").lower());
-print(f"Vogais: {asVogais} - total de {len(asVogais)} \nConsoantes: {asConsoantes} - total de {len(asConsoantes)}");
+vogal, consoante = contaVogalConsoante(input("Digite ai:  "));
+
+print(f" O número de Vogais é ",len(vogal)," e elas são ",vogal);
+print(f" O número de Consoantes é ",len(consoante)," e elas são ",consoante)
