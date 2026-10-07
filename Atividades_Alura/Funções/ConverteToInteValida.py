@@ -1,20 +1,19 @@
 def converteToInt (dados):
     if type(dados) == str:
        return int(dados);
-    elif type(dados) == list:
-        novo_dado = [int(dado) for dado in dados] 
-        return novo_dado
+    elif type(dados) == list: 
+        return [int(dado) for dado in dados];
     else:
-        return print("Vtnc!")
+        return("Não deu certo sua conversão, bobinho!");
     
 def validaInt (dados):
     if type(dados) == list:
         for x in dados:
-            if type(x) == int:
-                continue
-            else:
+            #if type(x) == int:
+            if not isinstance (x, int):
                 return "Não deu certo sua converção, bobinho!"
-        return "Todos os números foram convertidos corretamente!";    
+            else:
+                return "Todos os números foram convertidos corretamente!";    
     elif type(dados) != int:
         return "Não deu certo sua conversão, bobinho!"     
     else:
