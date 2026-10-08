@@ -1,0 +1,20 @@
+novo_dicionario = dict()
+for x in range (1,4):
+    nome = input("Informe o nome do produto: ")
+    valor = float(input("Informe o estoque do produto: "))
+    novo_dicionario[nome] = valor;
+print(f"Dicionario de produtos: {novo_dicionario}");
+
+while True:
+    alt = input("Deseja mudar o estoque de algum item (S-sim | N-não): ").upper();
+    if alt == "S":
+        produto =  input("Informe o nome do item:  ");
+        if produto in novo_dicionario:
+            novo_valor = input("Informe o novo estoque:  ");
+            novo_dicionario[produto] = novo_valor;
+        else:
+            print("Esse item não existe!");
+    else:
+        print(f"Esse é o Dicionario Atualizado: {novo_dicionario}");
+        break
+    
