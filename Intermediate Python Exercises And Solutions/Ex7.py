@@ -10,8 +10,8 @@ def verifica_palindromo(str):
     str_clean = [char.lower() for char in str if char.isalnum()]
     print(type(str_clean))
     str_str = " ".join(str_clean)
-
     return str_str == str_str[::-1]
+
     # tmp = list(str)
     # new_list = ''
     
